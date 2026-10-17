@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taylor Norton | Voice Actor – Animation, Video Games & Narration</title>
+    <meta name="description" content="Friendly, authentic, and versatile voice actor specializing in Animation, Video Games, Dubbing, Narration, and Commercials. Broadcast-quality home studio.">
+
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    
+    <meta property="og:title" content="Taylor Norton | Voice Actor">
+    <meta property="og:description" content="Friendly, authentic voice over for Animation, Video Games, Dubbing, Narration, and Commercials.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.taylornortonvo.com">
+    <meta property="og:image" content="./images/OTM-TaylorN-5.jpg">
+    
+    <!-- Google Fonts: Barlow Condensed (Bold Condensed) + Lora (Editorial Serif) + Plus Jakarta Sans (Clean UI) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        condensed: ['"Barlow Condensed"', 'sans-serif'],
+                        serif: ['"Lora"', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        midnight: {
+                            950: '#060a10',
+                            900: '#0b111e',
+                            800: '#111a2e',
+                            700: '#1b2845',
+                        },
+                        emerald: {
+                            400: '#34d399',
+                            500: '#10b981',
+                            600: '#059669',
+                        },
+                        ocean: {
+                            400: '#38bdf8',
+                            500: '#06b6d4',
+                        },
+                        cream: {
+                            100: '#f4f1ea',
+                            200: '#e2ddd2',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Schema.org Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Taylor Norton Voice Over",
+      "image": "./images/OTM-TaylorN-5.jpg",
+      "description": "Voice actor specializing in animation, video games, dubbing, narration, and commercials.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressRegion": "BC",
+        "addressCountry": "CA"
+      },
+      "email": "hello@taylornortonvo.com",
+      "knowsLanguage": ["English"]
+    }
+    </script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="antialiased selection:bg-emerald-500 selection:text-midnight-950 font-sans">
+
+    <!-- Sticky Navigation -->
+    <nav class="fixed w-full z-50 bg-midnight-950/85 backdrop-blur-md border-b border-emerald-500/15 transition-all duration-300" id="navbar">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Brand Monogram & Name -->
+                <div class="flex-shrink-0 flex items-center gap-3 cursor-pointer group" onclick="window.scrollTo(0,0)">
+                    <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-emerald-500 to-ocean-500 flex items-center justify-center text-midnight-950 font-condensed font-extrabold text-2xl tracking-tighter shadow-[0_0_15px_rgba(16,185,129,0.35)] group-hover:scale-105 transition-transform">
+                        TN
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="font-condensed text-2xl font-bold uppercase tracking-wider text-cream-100 leading-none">
+                            Taylor <span class="text-emerald-400">Norton</span>
+                        </span>
+                        <span class="text-[11px] uppercase tracking-[0.2em] text-slate-400 font-medium mt-0.5">Voice Actor</span>
+                    </div>
+                </div>
+                
+                <!-- Desktop Links -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#demos" class="nav-link text-slate-300 hover:text-emerald-400 transition-colors font-condensed text-lg uppercase tracking-wider">Demos</a>
+                    <a href="#bio" class="nav-link text-slate-300 hover:text-emerald-400 transition-colors font-condensed text-lg uppercase tracking-wider">About</a>
+                    <a href="#studio" class="nav-link text-slate-300 hover:text-emerald-400 transition-colors font-condensed text-lg uppercase tracking-wider">Studio</a>
+                    <a href="#contact" class="px-6 py-2.5 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-midnight-950 font-condensed font-bold text-lg uppercase tracking-wider transition-all shadow-[0_0_18px_rgba(16,185,129,0.3)] hover:shadow-[0_0_25px_rgba(52,211,153,0.55)] hover:-translate-y-0.5">
+                        Book Taylor
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Trigger -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-slate-300 hover:text-emerald-400 focus:outline-none p-2" aria-label="Toggle Menu">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="md:hidden hidden bg-midnight-900 border-b border-emerald-500/20 absolute w-full shadow-2xl">
+            <div class="px-4 pt-3 pb-6 space-y-2">
+                <a href="#demos" class="block px-4 py-3 rounded-lg font-condensed text-xl uppercase tracking-wider text-slate-200 hover:text-emerald-400 hover:bg-midnight-800">Demos</a>
+                <a href="#bio" class="block px-4 py-3 rounded-lg font-condensed text-xl uppercase tracking-wider text-slate-200 hover:text-emerald-400 hover:bg-midnight-800">About</a>
+                <a href="#studio" class="block px-4 py-3 rounded-lg font-condensed text-xl uppercase tracking-wider text-slate-200 hover:text-emerald-400 hover:bg-midnight-800">Studio</a>
+                <a href="#contact" class="block px-4 py-3 mt-4 text-center rounded-lg font-condensed text-xl uppercase tracking-wider font-bold bg-emerald-500 text-midnight-950">Book Taylor</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 lg:pt-40 lg:pb-28 overflow-hidden">
+        <!-- Ambient Midnight Blue & Emerald Studio Glows -->
+        <div class="absolute top-12 left-1/4 w-[500px] h-[500px] bg-emerald-500/10 blur-[130px] rounded-full pointer-events-none"></div>
+        <div class="absolute bottom-0 right-1/4 w-[600px] h-[450px] bg-ocean-500/10 blur-[140px] rounded-full pointer-events-none"></div>
+        
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-16">
+                
+                <!-- Left Column: Copy & CTAs -->
+                <div class="w-full lg:w-7/12 space-y-6 text-center lg:text-left reveal-on-scroll">
+                    <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full border border-emerald-500/30 bg-emerald-500/10 text-emerald-400 text-xs sm:text-sm font-medium tracking-wide">
+                        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                        Broadcast-Ready Home Studio • Source-Connect &amp; Zoom
+                    </div>
+
+                    <h1 class="text-5xl sm:text-6xl lg:text-7xl font-condensed font-extrabold uppercase tracking-tight leading-[0.95] text-cream-100">
+                        Pull Up a Chair.<br />
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-teal-300 to-ocean-400">
+                            Let’s Bring Your World to Life.
+                        </span>
+                    </h1>
+
+                    <p class="text-lg sm:text-xl text-slate-300 font-serif italic max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                        Friendly, authentic, and character-driven voiceover—delivering the warmth of a trusted friend and the theatrical range your story deserves.
+                    </p>
+
+                    <!-- Ordered Genre Priority Pills -->
+                    <div class="pt-2">
+                        <p class="text-xs uppercase tracking-[0.2em] text-slate-400 mb-3 font-semibold">Specializing In:</p>
+                        <div class="flex flex-wrap justify-center lg:justify-start gap-2.5">
+                            <span class="genre-pill px-4 py-1.5 rounded-md bg-midnight-800/90 border border-emerald-500/40 text-emerald-300 font-condensed uppercase tracking-wider text-base font-bold shadow-sm">
+                                <i class="fa-solid fa-wand-magic-sparkles text-xs mr-1.5 text-emerald-400"></i> Animation
+                            </span>
+                            <span class="genre-pill px-4 py-1.5 rounded-md bg-midnight-800/90 border border-ocean-500/35 text-ocean-400 font-condensed uppercase tracking-wider text-base font-bold shadow-sm">
+                                <i class="fa-solid fa-gamepad text-xs mr-1.5"></i> Video Games
+                            </span>
+                            <span class="genre-pill px-4 py-1.5 rounded-md bg-midnight-800/80 border border-slate-700 text-cream-100 font-condensed uppercase tracking-wider text-base">
+                                <i class="fa-solid fa-film text-xs mr-1.5 text-emerald-400"></i> Dubbing
+                            </span>
+                            <span class="genre-pill px-4 py-1.5 rounded-md bg-midnight-800/80 border border-slate-700 text-cream-100 font-condensed uppercase tracking-wider text-base">
+                                <i class="fa-solid fa-book-open text-xs mr-1.5 text-ocean-400"></i> Narration
+                            </span>
+                            <span class="genre-pill px-4 py-1.5 rounded-md bg-midnight-800/80 border border-slate-700 text-cream-100 font-condensed uppercase tracking-wider text-base">
+                                <i class="fa-solid fa-bullhorn text-xs mr-1.5 text-emerald-400"></i> Commercials
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Primary Action Buttons -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                        <a href="#demos" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-400 hover:from-emerald-400 hover:to-teal-300 text-midnight-950 font-condensed font-bold text-xl uppercase tracking-wider transition-all shadow-[0_0_25px_rgba(16,185,129,0.35)] hover:shadow-[0_0_35px_rgba(52,211,153,0.6)] hover:-translate-y-0.5 flex items-center justify-center gap-3 group">
+                            <i class="fa-solid fa-circle-play text-xl group-hover:scale-110 transition-transform"></i>
+                            Listen to Demos
+                        </a>
+                        <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-midnight-800/80 border border-slate-700 hover:border-emerald-400/60 hover:bg-midnight-800 text-cream-100 font-condensed font-bold text-xl uppercase tracking-wider transition-all flex items-center justify-center gap-2">
+                            <i class="fa-regular fa-comments text-emerald-400 text-lg"></i>
+                            Request an Audition
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Right Column: Hero Headshot (OTM-TaylorN-5.jpg) -->
+                <div class="w-full lg:w-5/12 flex justify-center reveal-on-scroll">
+                    <div class="relative w-72 sm:w-80 lg:w-96 hero-portrait-wrapper">
+                        <!-- Offset Decorative Frame -->
+                        <div class="absolute -inset-3 rounded-2xl bg-gradient-to-tr from-emerald-500/30 via-ocean-500/20 to-transparent blur-md pointer-events-none"></div>
+                        <div class="absolute top-4 -right-4 w-full h-full rounded-2xl border-2 border-emerald-500/30 pointer-events-none"></div>
+                        
+                        <!-- Main Portrait Card -->
+                        <div class="relative rounded-2xl overflow-hidden border border-slate-700/80 bg-midnight-800 shadow-2xl">
+                            <img src="./images/OTM-TaylorN-5.jpg" alt="Taylor Norton Voice Actor Headshot" class="w-full h-[380px] sm:h-[430px] object-cover object-top">
+                            <!-- Subtle bottom vignette so image blends naturally into dark UI -->
+                            <div class="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-midnight-950/90 via-midnight-950/40 to-transparent"></div>
+                            
+                            <!-- Floating trait tag inside portrait bottom -->
+                            <div class="absolute bottom-4 left-4 right-4 flex items-center justify-between px-4 py-2.5 rounded-xl bg-midnight-950/85 backdrop-blur-md border border-emerald-500/25">
+                                <span class="font-serif italic text-sm text-cream-100">"Friendly • Authentic • Kind"</span>
+                                <span class="text-xs font-condensed uppercase tracking-widest text-emerald-400 font-bold">BC, Canada</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Voice Demos Section -->
+    <section id="demos" class="py-20 bg-midnight-900/90 border-y border-slate-800/80 relative">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-14 reveal-on-scroll">
+                <span class="text-emerald-400 font-condensed uppercase tracking-[0.25em] text-sm font-bold">Step Into the Booth</span>
+                <h2 class="text-4xl sm:text-5xl font-condensed font-extrabold uppercase tracking-wide text-cream-100 mt-1 mb-4">
+                    Voice <span class="text-emerald-400">Demos</span>
+                </h2>
+                <div class="h-1 w-20 bg-gradient-to-r from-emerald-500 to-ocean-500 mx-auto rounded"></div>
+                <p class="mt-5 text-slate-300 font-serif text-lg max-w-xl mx-auto">
+                    Press play to hear Taylor in action. <span class="hidden md:inline text-slate-400 text-base">(Direct MP3 downloads available via the download icon.)</span>
+                </p>
+            </div>
+
+            <!-- Dynamic Audio Playlist Container -->
+            <div class="space-y-6 reveal-on-scroll" id="audio-playlist">
+            </div>
+
+            <!-- Upcoming Reels Note -->
+            <div class="mt-8 text-center reveal-on-scroll">
+                <p class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-midnight-800/70 border border-slate-800 text-slate-400 text-sm font-serif italic">
+                    <i class="fa-solid fa-microphone-lines text-emerald-400 not-italic"></i>
+                    Looking for a specific character archetype, game read, or narration sample? <a href="#contact" class="text-emerald-400 hover:underline not-italic font-sans font-medium">Request a custom read anytime.</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Taylor Section (Featuring OTM-TaylorN.jpg) -->
+    <section id="bio" class="py-24 bg-midnight-950 relative overflow-hidden">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+                
+                <!-- Left Column: Second Headshot (OTM-TaylorN.jpg) -->
+                <div class="lg:col-span-5 reveal-on-scroll">
+                    <div class="relative mx-auto max-w-sm lg:max-w-none">
+                        <div class="absolute -top-3 -left-3 w-full h-full rounded-2xl border-2 border-ocean-500/30 pointer-events-none"></div>
+                        <div class="relative rounded-2xl overflow-hidden border border-slate-700 bg-midnight-800 shadow-xl">
+                            <img src="./images/OTM-TaylorN.jpg" alt="Taylor Norton - Knowledgeable and Authentic" class="w-full h-[420px] sm:h-[460px] object-cover object-top">
+                            <div class="absolute inset-x-0 bottom-0 p-5 bg-gradient-to-t from-midnight-950 via-midnight-950/80 to-transparent">
+                                <p class="font-condensed uppercase tracking-wider text-emerald-400 text-sm font-bold">Stage-Trained Actor</p>
+                                <p class="font-serif italic text-cream-100 text-base">Bringing theatrical depth to the microphone.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Refined Editorial Bio & Training Badges -->
+                <div class="lg:col-span-7 reveal-on-scroll">
+                    <span class="text-emerald-400 font-condensed uppercase tracking-[0.25em] text-sm font-bold">Meet the Voice</span>
+                    <h2 class="text-4xl sm:text-5xl font-condensed font-extrabold uppercase tracking-wide text-cream-100 mt-1 mb-6">
+                        About <span class="text-emerald-400">Taylor</span>
+                    </h2>
+                    
+                    <div class="space-y-5 text-slate-300 leading-relaxed font-serif text-lg">
+                        <p>
+                            Taylor Norton is a British Columbia-based voice actor who brings the warmth, candor, and easygoing energy of a trusted friend into every session. Whether he’s breathing life into an eccentric animated character, grounding a high-stakes video game world, or guiding listeners through an engaging topic, Taylor’s reads are defined by an approachable authority and unmistakable authenticity.
+                        </p>
+                        <p>    
+                            A storyteller at heart since his first middle school stage production, Taylor spent years honing his craft under the theatre lights before earning his <strong class="text-cream-100 font-semibold">Diploma in Theatre from the University of the Fraser Valley</strong>. He later brought that deep theatrical foundation directly to the booth, graduating from the intensive <strong class="text-cream-100 font-semibold">Full-Time Voice Over Diploma program at On The Mic Training</strong>.
+                        </p>
+                        <p>     
+                            As a lifelong enthusiast of animation, video games, and dubbing, Taylor pairs genuine fan knowledge with disciplined vocal technique—knowing when to play big and dynamic, and when to settle into an intimate, conversational read for narration and commercials.
+                        </p>
+                    </div>
+                    
+                    <!-- Credentials & Training Cards -->
+                    <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="p-4 bg-midnight-800/90 rounded-xl border border-slate-700/80 flex items-center gap-4">
+                            <img src="./images/OTM-logo-gold.png" alt="On The Mic Training" class="h-11 w-11 object-contain flex-shrink-0">
+                            <div>
+                                <h4 class="font-condensed uppercase tracking-wider text-cream-100 font-bold text-lg leading-tight">On The Mic Training</h4>
+                                <p class="text-xs text-slate-400 mt-0.5">Full-Time VO Diploma Graduate</p>
+                            </div>
+                        </div>
+                        <div class="p-4 bg-midnight-800/90 rounded-xl border border-slate-700/80 border-l-4 border-l-emerald-500 flex items-center gap-4">
+                            <div class="w-11 h-11 rounded-lg bg-midnight-950 flex items-center justify-center text-emerald-400 text-xl flex-shrink-0 border border-slate-700">
+                                <i class="fa-solid fa-masks-theater"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-condensed uppercase tracking-wider text-cream-100 font-bold text-lg leading-tight">UFV Theatre</h4>
+                                <p class="text-xs text-slate-400 mt-0.5">Diploma in Theatre (2017)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Studio Specs & Gear Section -->
+    <section id="studio" class="py-20 bg-midnight-900 border-t border-slate-800/80 relative overflow-hidden">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-14 reveal-on-scroll">
+                <span class="text-ocean-400 font-condensed uppercase tracking-[0.25em] text-sm font-bold">Technical Specs</span>
+                <h2 class="text-4xl sm:text-5xl font-condensed font-extrabold uppercase tracking-wide text-cream-100 mt-1 mb-4">
+                    Home <span class="text-emerald-400">Studio</span> &amp; Gear
+                </h2>
+                <div class="h-1 w-20 bg-gradient-to-r from-emerald-500 to-ocean-500 mx-auto rounded"></div>
+                <p class="mt-5 text-slate-300 font-serif text-lg max-w-2xl mx-auto">
+                    Engineered for whisper-quiet noise floors, crystal-clear character dynamics, and seamless remote direction.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 reveal-on-scroll">
+                <!-- Microphone -->
+                <div class="studio-card bg-midnight-800/75 p-6 rounded-2xl border border-slate-700/80 hover:border-emerald-500/50 transition-all">
+                    <div class="w-12 h-12 rounded-xl bg-midnight-950 flex items-center justify-center text-emerald-400 text-xl border border-slate-700 mb-4">
+                        <i class="fa-solid fa-microphone-lines"></i>
+                    </div>
+                    <h3 class="font-condensed uppercase tracking-wider text-cream-100 font-bold text-2xl">Microphone</h3>
+                    <p class="text-emerald-400 font-medium text-sm mt-1">RØDE NT1 (5th Generation)</p>
+                    <p class="text-slate-400 text-sm mt-2 leading-relaxed">
+                        Large-diaphragm cardioid condenser with an ultra-low 4dBA self-noise floor and 32-bit float digital output for unclipped dynamic reads.
+                    </p>
+                </div>
+
+                <!-- Audio Interface -->
+                <div class="studio-card bg-midnight-800/75 p-6 rounded-2xl border border-slate-700/80 hover:border-emerald-500/50 transition-all">
+                    <div class="w-12 h-12 rounded-xl bg-midnight-950 flex items-center justify-center text-ocean-400 text-xl border border-slate-700 mb-4">
+                        <i class="fa-solid fa-sliders"></i>
+                    </div>
+                    <h3 class="font-condensed uppercase tracking-wider text-cream-100 font-bold text-2xl">Audio Interface</h3>
+                    <p class="text-ocean-400 font-medium text-sm mt-1">Focusrite Scarlett 2i2 (4th Gen)</p>
+                    <p class="text-slate-400 text-sm mt-2 leading-relaxed">
+                        Studio-grade preamps with 120dB dynamic range, delivering transparent, pristine A/D conversion.
+                    </p>
+                </div>
+
+                <!-- Acoustics & DAW -->
+                <div class="studio-card bg-midnight-800/75 p-6 rounded-2xl border border-slate-700/80 hover:border-emerald-500/50 transition-all">
+                    <div class="w-12 h-12 rounded-xl bg-midnight-950 flex items-center justify-center text-emerald-400 text-xl border border-slate-700 mb-4">
+                        <i class="fa-solid fa-wave-square"></i>
+                    </div>
+                    <h3 class="font-condensed uppercase tracking-wider text-cream-100 font-bold text-2xl">Booth &amp; DAW</h3>
+                    <p class="text-emerald-400 font-medium text-sm mt-1">Treated Studio + Audacity</p>
+                    <p class="text-slate-400 text-sm mt-2 leading-relaxed">
+                        Dedicated acoustically treated recording space paired with fast, clean WAV/MP3 editing and turnaround in Audacity.
+                    </p>
+                </div>
+
+                <!-- Remote Connectivity (Spans full width on lg) -->
+                <div class="md:col-span-2 lg:col-span-3 studio-card bg-gradient-to-r from-midnight-800/90 via-midnight-800/75 to-midnight-800/90 p-6 sm:p-8 rounded-2xl border border-emerald-500/25 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+                    <div class="flex items-start sm:items-center gap-5">
+                        <div class="w-14 h-14 rounded-2xl bg-emerald-500/15 flex items-center justify-center text-emerald-400 text-2xl border border-emerald-500/30 flex-shrink-0">
+                            <i class="fa-solid fa-satellite-dish"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-condensed uppercase tracking-wider text-cream-100 font-bold text-2xl">Live Directed Sessions &amp; Connectivity</h3>
+                            <p class="text-slate-300 text-sm sm:text-base mt-1">
+                                Available for real-time directed sessions via <strong class="text-emerald-400">Source-Connect</strong>, <strong class="text-ocean-400">Zoom</strong>, Discord, Google Meet, or your production team’s preferred studio bridge.
+                            </p>
+                        </div>
+                    </div>
+                    <a href="#contact" class="px-6 py-3 rounded-xl bg-midnight-950 hover:bg-emerald-500 text-cream-100 hover:text-midnight-950 border border-emerald-500/40 font-condensed uppercase tracking-wider font-bold text-lg transition-all flex-shrink-0">
+                        Book a Session
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 bg-midnight-950 relative overflow-hidden">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 reveal-on-scroll">
+                <span class="text-emerald-400 font-condensed uppercase tracking-[0.25em] text-sm font-bold">Always Happy to Chat</span>
+                <h2 class="text-4xl sm:text-5xl font-condensed font-extrabold uppercase tracking-wide text-cream-100 mt-1 mb-4">
+                    Let’s Create <span class="text-emerald-400">Something Great</span>
+                </h2>
+                <div class="h-1 w-20 bg-gradient-to-r from-emerald-500 to-ocean-500 mx-auto rounded mb-6"></div>
+                <p class="text-slate-300 font-serif text-lg max-w-xl mx-auto">
+                    Have a character in need of a voice, a script for a custom audition, or a project question? Drop a message below!
+                </p>
+            </div>
+
+            <div class="bg-midnight-800/80 backdrop-blur-md rounded-2xl p-6 sm:p-10 border border-slate-700/80 shadow-2xl relative z-10 reveal-on-scroll">
+                <div class="flex justify-center gap-8 mb-10 pb-8 border-b border-slate-700/80 flex-wrap">
+                    <a href="mailto:hello@taylornortonvo.com" class="flex items-center gap-3 text-slate-200 hover:text-emerald-400 transition font-medium">
+                        <span class="w-10 h-10 rounded-full bg-midnight-950 border border-slate-700 flex items-center justify-center text-emerald-400">
+                            <i class="fa-regular fa-envelope"></i>
+                        </span>
+                        hello@taylornortonvo.com
+                    </a>
+                    <div class="flex items-center gap-3 text-slate-300">
+                        <span class="w-10 h-10 rounded-full bg-midnight-950 border border-slate-700 flex items-center justify-center text-ocean-400">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </span>
+                        British Columbia, Canada (PST/PDT)
+                    </div>
+                </div>
+
+                <!-- Contact Form (Update the Formspree endpoint URL inside script below with Taylor's Formspree ID) -->
+                <form id="contactForm" class="space-y-6">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-slate-300 mb-2">Name / Studio</label>
+                            <input type="text" id="name" name="name" required class="w-full bg-midnight-950 border border-slate-700 rounded-xl px-4 py-3.5 text-cream-100 focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 transition-colors placeholder-slate-600" placeholder="Jane Doe">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-slate-300 mb-2">Email Address</label>
+                            <input type="email" id="email" name="email" required class="w-full bg-midnight-950 border border-slate-700 rounded-xl px-4 py-3.5 text-cream-100 focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 transition-colors placeholder-slate-600" placeholder="jane@studio.com">
+                        </div>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label for="type" class="block text-sm font-medium text-slate-300 mb-2">Project Genre</label>
+                            <select id="type" name="project_type" class="w-full bg-midnight-950 border border-slate-700 rounded-xl px-4 py-3.5 text-cream-100 focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 transition-colors">
+                                <option value="animation">Animation</option>
+                                <option value="videogame">Video Games</option>
+                                <option value="dubbing">Dubbing / ADR</option>
+                                <option value="narration">Narration / E-Learning</option>
+                                <option value="commercial">Commercial</option>
+                                <option value="other">Other / General Inquiry</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="connectivity" class="block text-sm font-medium text-slate-300 mb-2">Session Preference <span class="text-slate-500 text-xs font-normal italic">(Optional)</span></label>
+                            <input type="text" id="connectivity" name="connectivity" class="w-full bg-midnight-950 border border-slate-700 rounded-xl px-4 py-3.5 text-cream-100 focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 transition-colors placeholder-slate-600" placeholder="Self-Record, Source-Connect, Zoom...">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-slate-300 mb-2">Project Details (Character Specs, Script, Usage, Timeline)</label>
+                        <textarea id="message" name="message" rows="5" required class="w-full bg-midnight-950 border border-slate-700 rounded-xl px-4 py-3.5 text-cream-100 focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 transition-colors placeholder-slate-600" placeholder="Tell me about your project or character..."></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full bg-gradient-to-r from-emerald-500 to-teal-400 hover:from-emerald-400 hover:to-teal-300 text-midnight-950 font-condensed font-bold text-2xl uppercase tracking-wider py-4 rounded-xl transition-all shadow-[0_0_20px_rgba(16,185,129,0.3)] flex justify-center items-center gap-3">
+                        <i class="fa-solid fa-paper-plane text-lg"></i> Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-midnight-950 py-10 border-t border-slate-800/80 text-center">
+        <div class="max-w-6xl mx-auto px-4">
+            <p class="font-condensed uppercase tracking-widest text-cream-100 text-lg font-bold mb-1">
+                Taylor <span class="text-emerald-400">Norton</span> Voice Over
+            </p>
+            <p class="text-slate-500 text-sm">&copy; 2026 Taylor Norton. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // 1. Mobile Navigation Toggle
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+
+        mobileBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // 2. Sticky Navbar Shadow on Scroll
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 20) {
+                navbar.classList.add('shadow-2xl');
+            } else {
+                navbar.classList.remove('shadow-2xl');
+            }
+        });
+
+        // 3. Level-3 Scroll Reveal Animation Observer
+        const revealElements = document.querySelectorAll('.reveal-on-scroll');
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('revealed');
+                }
+            });
+        }, { threshold: 0.12 });
+
+        revealElements.forEach(el => revealObserver.observe(el));
+
+        // 4. Voiceover Demos Configuration (Launch with Animation Demo; uncomment others when ready)
+        const demos = [
+            {
+                id: 'demo-animation',
+                title: 'Animation Demo',
+                category: 'Animation • Character • Storytelling',
+                badge: 'Featured Reel',
+                url: './audio/taylor-animation-demo.mp3'
+            }
+            /*
+            ,
+            {
+                id: 'demo-gaming',
+                title: 'Video Game Demo',
+                category: 'Interactive • Combat • NPC & Lore',
+                badge: 'Gaming',
+                url: './audio/taylor-gaming-demo.mp3'
+            },
+            {
+                id: 'demo-dubbing',
+                title: 'Dubbing Demo',
+                category: 'Anime • Live-Action ADR • Sync',
+                badge: 'Dubbing',
+                url: './audio/taylor-dubbing-demo.mp3'
+            },
+            {
+                id: 'demo-narration',
+                title: 'Narration Demo',
+                category: 'Documentary • E-Learning • Explainer',
+                badge: 'Narration',
+                url: './audio/taylor-narration-demo.mp3'
+            },
+            {
+                id: 'demo-commercial',
+                title: 'Commercial Demo',
+                category: 'Conversational • Friendly • Authentic',
+                badge: 'Commercial',
+                url: './audio/taylor-commercial-demo.mp3'
+            }
+            */
+        ];
+
+        const playlistContainer = document.getElementById('audio-playlist');
+        let currentAudioElement = null;
+        let currentContainer = null;
+
+        const formatTime = (time) => {
+            if (isNaN(time)) return "0:00";
+            const minutes = Math.floor(time / 60);
+            const seconds = Math.floor(time % 60);
+            return `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+        };
+
+        demos.forEach((demo) => {
+            const playerHTML = `
+                <div id="container-${demo.id}" class="bg-midnight-800/90 border border-slate-700/90 rounded-2xl p-5 sm:p-7 flex flex-col md:flex-row items-center gap-5 sm:gap-6 transition-all duration-300 shadow-lg">
+                    
+                    <button id="btn-${demo.id}" class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-gradient-to-br from-emerald-500 to-teal-400 hover:from-emerald-400 hover:to-teal-300 text-midnight-950 flex items-center justify-center text-2xl sm:text-3xl flex-shrink-0 transition-transform hover:scale-105 focus:outline-none shadow-[0_0_20px_rgba(16,185,129,0.35)]" aria-label="Play ${demo.title}">
+                        <i class="fa-solid fa-play ml-1" id="icon-${demo.id}"></i>
+                    </button>
+                    
+                    <div class="flex-grow w-full">
+                        <div class="flex flex-wrap justify-between items-end gap-2 mb-2">
+                            <div>
+                                <div class="flex items-center gap-3">
+                                    <h3 class="text-cream-100 font-condensed uppercase tracking-wider font-bold text-2xl sm:text-3xl">${demo.title}</h3>
+                                    <!-- Audio-Reactive Equalizer Bars -->
+                                    <div id="eq-${demo.id}" class="eq-bars opacity-0 transition-opacity duration-300" aria-hidden="true">
+                                        <span></span><span></span><span></span><span></span>
+                                    </div>
+                                </div>
+                                <p class="text-emerald-400 font-serif italic text-sm sm:text-base">${demo.category}</p>
+                            </div>
+                            <div class="text-slate-400 text-sm font-mono tracking-wider" id="time-${demo.id}">
+                                0:00 / 0:00
+                            </div>
+                        </div>
+                        
+                        <div class="relative w-full mt-4">
+                            <input type="range" id="seek-${demo.id}" value="0" min="0" step="1" class="w-full" aria-label="Seek audio">
+                        </div>
+                    </div>
+                    
+                    <!-- Desktop-Only Volume & Download Controls (Hidden on Mobile via hidden md:flex) -->
+                    <div class="hidden md:flex items-center gap-4 ml-2">
+                        <div class="flex items-center group py-2">
+                            <button id="mute-btn-${demo.id}" class="text-slate-400 hover:text-emerald-400 transition-colors focus:outline-none relative z-10" title="Mute/Unmute">
+                                <i class="fa-solid fa-volume-high text-base w-5 text-center" id="vol-icon-${demo.id}"></i>
+                            </button>
+                            <div class="w-0 opacity-0 overflow-hidden group-hover:w-20 group-hover:opacity-100 group-hover:ml-2 group-focus-within:w-20 group-focus-within:opacity-100 group-focus-within:ml-2 transition-all duration-300 ease-out flex items-center">
+                                <input type="range" id="vol-${demo.id}" value="1" min="0" max="1" step="0.01" class="w-full volume-slider" aria-label="Volume">
+                            </div>
+                        </div>
+                        
+                        <a href="${demo.url}" download class="flex items-center gap-2 px-4 py-2.5 rounded-xl border border-emerald-500/40 bg-midnight-950/80 text-emerald-400 hover:bg-emerald-500 hover:text-midnight-950 font-condensed uppercase tracking-wider font-bold text-sm transition-all flex-shrink-0" title="Download MP3 (Desktop Only)">
+                            <i class="fa-solid fa-download"></i>
+                            <span>MP3</span>
+                        </a>
+                    </div>
+                    
+                    <audio id="audio-${demo.id}" src="${demo.url}" preload="metadata"></audio>
+                </div>
+            `;
+            
+            playlistContainer.insertAdjacentHTML('beforeend', playerHTML);
+        });
+
+        demos.forEach(demo => {
+            const audio = document.getElementById(`audio-${demo.id}`);
+            const playBtn = document.getElementById(`btn-${demo.id}`);
+            const playIcon = document.getElementById(`icon-${demo.id}`);
+            const seekBar = document.getElementById(`seek-${demo.id}`);
+            const timeDisplay = document.getElementById(`time-${demo.id}`);
+            const container = document.getElementById(`container-${demo.id}`);
+            const eqIndicator = document.getElementById(`eq-${demo.id}`);
+            const volBar = document.getElementById(`vol-${demo.id}`);
+            const volIcon = document.getElementById(`vol-icon-${demo.id}`);
+            const muteBtn = document.getElementById(`mute-btn-${demo.id}`);
+            
+            let lastVolume = 1;
+
+            audio.addEventListener('loadedmetadata', () => {
+                seekBar.max = Math.floor(audio.duration);
+                timeDisplay.innerText = `0:00 / ${formatTime(audio.duration)}`;
+            });
+
+            audio.addEventListener('timeupdate', () => {
+                seekBar.value = Math.floor(audio.currentTime);
+                timeDisplay.innerText = `${formatTime(audio.currentTime)} / ${formatTime(audio.duration)}`;
+                
+                const percentage = (audio.currentTime / audio.duration) * 100;
+                seekBar.style.background = `linear-gradient(to right, #10b981 ${percentage}%, #1b2845 ${percentage}%)`;
+            });
+
+            playBtn.addEventListener('click', () => {
+                if (currentAudioElement && currentAudioElement !== audio) {
+                    currentAudioElement.pause();
+                    const oldId = currentAudioElement.id.replace('audio-', '');
+                    document.getElementById(`icon-${oldId}`).className = 'fa-solid fa-play ml-1';
+                    document.getElementById(`eq-${oldId}`).classList.remove('opacity-100');
+                    currentContainer.classList.remove('player-active');
+                }
+
+                if (audio.paused) {
+                    audio.play();
+                    playIcon.className = 'fa-solid fa-pause';
+                    container.classList.add('player-active');
+                    eqIndicator.classList.add('opacity-100');
+                    currentAudioElement = audio;
+                    currentContainer = container;
+                } else {
+                    audio.pause();
+                    playIcon.className = 'fa-solid fa-play ml-1';
+                    container.classList.remove('player-active');
+                    eqIndicator.classList.remove('opacity-100');
+                }
+            });
+
+            seekBar.addEventListener('input', () => {
+                audio.currentTime = seekBar.value;
+            });
+
+            audio.addEventListener('ended', () => {
+                playIcon.className = 'fa-solid fa-play ml-1';
+                container.classList.remove('player-active');
+                eqIndicator.classList.remove('opacity-100');
+                seekBar.value = 0;
+                seekBar.style.background = '#1b2845';
+            });
+
+            const updateVolumeUI = (val) => {
+                if (val === 0) volIcon.className = 'fa-solid fa-volume-xmark text-base w-5 text-center';
+                else if (val < 0.5) volIcon.className = 'fa-solid fa-volume-low text-base w-5 text-center';
+                else volIcon.className = 'fa-solid fa-volume-high text-base w-5 text-center';
+                
+                const percentage = val * 100;
+                volBar.style.background = `linear-gradient(to right, #10b981 ${percentage}%, #1b2845 ${percentage}%)`;
+            };
+
+            if (volBar) {
+                updateVolumeUI(1);
+
+                volBar.addEventListener('input', () => {
+                    const val = parseFloat(volBar.value);
+                    audio.volume = val;
+                    updateVolumeUI(val);
+                });
+
+                muteBtn.addEventListener('click', () => {
+                    if (audio.volume > 0) {
+                        lastVolume = audio.volume;
+                        audio.volume = 0;
+                        volBar.value = 0;
+                    } else {
+                        audio.volume = lastVolume > 0 ? lastVolume : 1;
+                        volBar.value = audio.volume;
+                    }
+                    updateVolumeUI(audio.volume);
+                });
+            }
+        });
+
+        // 5. Contact Form Submission (Replace YOUR_FORMSPREE_ID with Taylor's Formspree endpoint)
+        document.getElementById('contactForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const form = e.target;
+            const btn = form.querySelector('button[type="submit"]');
+            const originalText = btn.innerHTML;
+            
+            btn.innerHTML = '<i class="fa-solid fa-circle-notch fa-spin"></i> Sending...';
+            btn.classList.add('opacity-75', 'cursor-not-allowed');
+            
+            const formData = new FormData(form);
+            
+            try {
+                const response = await fetch('https://formspree.io/f/YOUR_FORMSPREE_ID', {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+
+                if (response.ok) {
+                    btn.innerHTML = '<i class="fa-solid fa-check"></i> Message Sent!';
+                    btn.classList.add('bg-emerald-500', 'text-midnight-950');
+                    form.reset();
+                } else {
+                    throw new Error('Network response was not ok');
+                }
+            } catch (error) {
+                btn.innerHTML = '<i class="fa-solid fa-triangle-exclamation"></i> Please email directly.';
+                btn.classList.add('bg-rose-500', 'text-white');
+            }
+            
+            setTimeout(() => {
+                btn.innerHTML = originalText;
+                btn.classList.remove('bg-rose-500', 'text-white', 'opacity-75', 'cursor-not-allowed');
+            }, 4000);
+        });
+    </script>
+</body>
+</html>

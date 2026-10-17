@@ -1,0 +1,150 @@
+body {
+    background-color: #060a10;
+    color: #f4f1ea;
+}
+
+/* Custom Audio Range Sliders (Emerald & Midnight Theme) */
+input[type=range] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 8px;
+    background: #1b2845;
+    border-radius: 9999px;
+    overflow: hidden;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 9999px !important;
+    background: #34d399;
+    cursor: pointer;
+    margin-top: -4px;
+    box-shadow: 0 0 12px rgba(52, 211, 153, 0.75);
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 8px;
+    cursor: pointer;
+    background: transparent;
+    border-radius: 9999px;
+}
+
+input[type=range]::-moz-range-thumb {
+    height: 16px;
+    width: 16px;
+    border: none;
+    border-radius: 9999px !important;
+    background: #34d399;
+    cursor: pointer;
+    box-shadow: 0 0 12px rgba(52, 211, 153, 0.75);
+}
+
+input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 8px;
+    cursor: pointer;
+    background: transparent;
+    border-radius: 9999px;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+.volume-slider {
+    height: 6px !important;
+    border-radius: 9999px;
+}
+
+.volume-slider::-webkit-slider-thumb {
+    height: 10px !important;
+    width: 10px !important;
+    margin-top: -2px !important; 
+    border-radius: 9999px !important;
+    box-shadow: 0 0 8px rgba(52, 211, 153, 0.5);
+}
+
+.volume-slider::-moz-range-thumb {
+    height: 10px !important;
+    width: 10px !important;
+    border-radius: 9999px !important;
+    box-shadow: 0 0 8px rgba(52, 211, 153, 0.5);
+}
+
+/* Active Audio Player Glow */
+.player-active {
+    box-shadow: 0 0 30px rgba(16, 185, 129, 0.22);
+    border-color: #10b981 !important;
+}
+
+/* Audio-Reactive Equalizer Animation */
+.eq-bars {
+    display: inline-flex;
+    align-items: flex-end;
+    gap: 3px;
+    height: 16px;
+}
+
+.eq-bars span {
+    width: 3px;
+    background: linear-gradient(to top, #10b981, #38bdf8);
+    border-radius: 2px;
+    animation: eq-bounce 0.8s ease-in-out infinite alternate;
+}
+
+.eq-bars span:nth-child(1) { height: 6px; animation-delay: 0.1s; }
+.eq-bars span:nth-child(2) { height: 14px; animation-delay: 0.3s; }
+.eq-bars span:nth-child(3) { height: 9px; animation-delay: 0.2s; }
+.eq-bars span:nth-child(4) { height: 12px; animation-delay: 0.4s; }
+
+@keyframes eq-bounce {
+    0% { transform: scaleY(0.35); }
+    100% { transform: scaleY(1); }
+}
+
+/* Level-3 Smooth Scroll Reveal */
+.reveal-on-scroll {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-on-scroll.revealed {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Subtle Hero Portrait Float & Genre Pill Hover Lift */
+.hero-portrait-wrapper {
+    animation: gentle-float 6s ease-in-out infinite;
+}
+
+@keyframes gentle-float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-8px); }
+}
+
+.genre-pill {
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.genre-pill:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(16, 185, 129, 0.18);
+    border-color: rgba(52, 211, 153, 0.65);
+}
+
+.studio-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.studio-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px -8px rgba(6, 182, 212, 0.18);
+}
